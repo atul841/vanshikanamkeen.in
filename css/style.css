@@ -3,7 +3,14 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-}
+} 
+
+
+
+
+
+
+
 
 /* Navbar */
 .navbar {
@@ -31,7 +38,7 @@ body {
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 25px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .dealership-btn:hover {
@@ -41,7 +48,7 @@ body {
 
 
 .carousel-container {
-  width: 100%;
+  width:100%;
   overflow: hidden;
   position: relative;
 }
@@ -52,13 +59,14 @@ body {
 }
 
 .carousel-track img {
-  width: 25vw;
+  width: 19vw;
   height: 350px;
   object-fit: contain;
   border-radius: 10px;
   margin: 10px;
   flex-shrink: 0;
   background: #fff;
+  object-fit: cover;
 }
 
 @keyframes scrollDesktop {
@@ -69,6 +77,20 @@ body {
     transform: translateX(-50%);
   }
 }
+ 
+
+/* nav bar in the contact and about section  */
+
+.nav.nav-tight {
+    gap: 20px;
+  }
+
+  .nav.nav-tight .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+  }
+
 
 /* Mobile Scroll */
 @media (max-width: 768px) {
