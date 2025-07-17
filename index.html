@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naamkin Website .com</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css use  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- frist are create the part of the navbar and home page in the page  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./image/logo.png"
+            alt="Chacha Chaudhary Logo"
+            class="logo-img"
+          />
+        </a>
+
+        <style>
+          .logo-img {
+            width: 120px;
+            height: 120px;
+          }
+
+          @media screen and (max-width: 500px) {
+            .logo-img {
+              width: 90px;
+              height: 80px;
+            }
+          }
+        </style>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our_products">OUR PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="infratracher.html">INFRASTRUCTURE</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">CAREER</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <a class="btn dealership-btn" href="contact.html">GET DEALERSHIP</a>
+        </div>
+      </div>
+    </nav>
+    <!-- add this part of section in here the part that -->
+    <!-- Mobile Top-Center Nav (hidden on laptop and larger) -->
+    <div
+      class="d-block d-lg-none position-fixed top-0 start-50 translate-middle-x text-center w-100 py-3 shadow"
+      style="z-index: 1050; height: 100px"
+    >
+      <ul class="nav justify-content-center m-0">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="infratracher.html"
+            >ABOUT</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ Carousel Section -->
+    <div
+      id="productSlider"
+      class="carousel slide mt-5 pt-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner mx-auto">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-item active slide-bg"
+          style="background-image: url('./image/slide-1.jpg')"
+        ></div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item slide-bg"
+          style="background-image: url('./image/slide-1.jpg')"
+        ></div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item slide-bg"
+          style="background-image: url('./image/slide-1.jpg')"
+        ></div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#productSlider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#productSlider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- this is part of the end of home and navbar part of the end in the part of that in hance that no staart in the part of the  -->
+
+    <!-- the next about section start in the part of that in hance that  -->
+    <br />
+    <br />
+
+    <h2 class="hot-heading">Hot Products</h2>
+    <br />
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="./image/image-1new.jpeg" alt="1" />
+        <img src="./image/image_2new.jpeg" alt="2" />
+        <img src="./image/image_3.jpeg" alt="3" />
+        <img src="./image/image_4.jpeg" alt="4" />
+        <img src="./image/image_5.jpeg" alt="5" />
+        <img src="./image/image_6.jpeg" alt="6" />
+        <img src="./image/image_7.jpeg" alt="7" />
+        <img src="./image/image_8.jpeg" alt="8" />
+
+        <!-- Duplicates for smooth loop -->
+        <img src="./image/Image_1.jpeg" alt="1" />
+        <img src="./image/image_2.jpeg" alt="2" />
+        <img src="./image/image_3.jpeg" alt="3" />
+        <img src="./image/image_4.jpeg" alt="4" />
+        <img src="./image/image-5.jpeg" alt="5" />
+        <img src="./image/image-6.jpeg" alt="6" />
+        <img src="./image/image_7.jpeg" alt="7" />
+        <img src="./image/image_8.jpeg" alt="8" />
+      </div>
+    </div>
+
+    <!-- the next part of that in hance that way end  -->
+
+    <!-- about ka section start ho gaya hai  -->
+    <br />
+    <br />
+
+    <section id="about" class="about-section">
+      <div class="container-about">
+        <div class="text-content">
+          <h2 style="color: black; font-weight: bold">
+            About Vanshika Namkeen
+          </h2>
+          <p>
+            Vanshiak Namkeen offers one of a kind delicious taste that comes
+            with a unique blend of traditional spices handpicked and mixed
+            together to give a wave of flavors to our namkeens and snacks.
+            Everyone loves Chacha Chaudhary Namkeen for its rich taste that
+            comes with the goodness of health. Chacha Chaudhary Namkeen is for
+            everyone and every occasion, making it an absolute favorite!
+          </p>
+
+          <a href="#" class="know-more-btn"> 💡 Know More </a>
+        </div>
+        <div class="logo-content">
+          <img
+            src="./image/logobg.png"
+            alt="Chacha Chaudhary Logo"
+            class="logo-pulse"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- about ka section end ho gaya hai   -->
+    <br />
+    <br />
+    <!-- about section ke bat ka part start ho gaya  hai  -->
+    <section
+      id="our_products"
+      class="explore-products text-center py-5"
+      style="background-color: rgb(87, 220, 160)"
+    >
+      <h2 class="section-title">Explore Products</h2>
+      <div class="product-row">
+        <!-- Product 1 -->
+        <div class="product-card red-bg">
+          <img src="./image/Image_1.jpeg" alt="Super Tomato Chips" />
+          <div class="product-name">KUMBH MIXTURE</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card blue-bg">
+          <img src="./image/image_2.jpeg" alt="Masala Puffs" />
+          <div class="product-name">MOONG DAL</div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card yellow-bg">
+          <img src="./image/image_3.jpeg" alt="Primo Salted Chips" />
+          <div class="product-name">HARA MATAR</div>
+        </div>
+        <div class="product-card yellow-bg">
+          <img src="./image/image_4.jpeg" alt="Primo Salted Chips" />
+          <div class="product-name">FULL OF FLAVOR</div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="product-row">
+        <!-- Product 1 -->
+        <div class="product-card red-bg">
+          <img src="./image/image_5.jpeg" alt="Super Tomato Chips" />
+          <div class="product-name">TASTY NUTS</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card blue-bg">
+          <img src="./image/image_6.jpeg" alt="Masala Puffs" />
+          <div class="product-name">NIMBU BHUJIA</div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card yellow-bg">
+          <img src="./image/image_7.jpeg" alt="Primo Salted Chips" />
+          <div class="product-name">MOONG DAL</div>
+        </div>
+        <div class="product-card yellow-bg">
+          <img src="./image/image_8.jpeg" alt="Primo Salted Chips" />
+          <div class="product-name">KUMBH MIXTURE</div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ke bad ka part end ho gaya hai  -->
+
+    <!-- user conntact part start -->
+    <section class="dealership-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Image -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./image/namkin.png"
+              alt="Chips"
+              class="img-fluid chips-image"
+            />
+          </div>
+          <br />
+          <!-- Right Form -->
+          <div class="col-md-6">
+            <h2 class="dealership-title">Want Dealership?</h2>
+
+            <!-- Step Indicators -->
+            <div class="step-indicator d-flex justify-content-center mb-4">
+              <div class="step active">1</div>
+              <div class="step">2</div>
+              <div class="step">3</div>
+              <div class="step">4</div>
+              <div class="step">5</div>
+            </div>
+
+            <!-- Form Inputs -->
+            <form method="POST" action="submit.php">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-primary next-btn">
+                    NEXT
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- user contact from end  -->
+
+    <!-- footer section start  -->
+    <footer class="text-dark pt-5 pb-3" style="background-color: #b8b8b8">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & About -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="./image/logobg.png"
+              alt="Shivanshi  Logo"
+              style="width: 180px"
+            />
+            <p class="mt-3" style="color: #666">
+              Vanshika Namkeen offers one of a kind delicious taste that comes
+              with a unique blend of traditional spices handpicked and mixed
+              together to give a wave of flavors to our namkeens and snacks.
+              Everyone loves Vanshika Namkeen for its rich taste that comes with
+              the goodness of health.
+            </p>
+            <!-- Social Icons -->
+            <div class="d-flex gap-3 mt-3">
+              <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold" style="font-family: 'cursive'">Quick Links</h5>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block py-1"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block py-1"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block py-1"
+                  >Team & Story</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block py-1"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none d-block py-1"
+                  >Catalogue</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold" style="font-family: 'cursive'">Information</h5>
+            <img
+              src="./image/logobg.png"
+              alt="Information"
+              class="my-3"
+              style="width: 150px"
+            />
+            <ul class="list-unstyled text-dark">
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>BABA ENTERPRISES
+                SHAHJAHANPUR NEAR D.P SINGH INTER COLLEGE, Uttar Pradesh, 242001
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill me-2"></i>
+                babaenterprises1108@gmail.com
+              </li>
+              <li><i class="bi bi-telephone-fill me-2"></i>+91 859-958-5054</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <div
+          class="d-flex justify-content-between flex-wrap text-center text-md-start"
+        >
+          <p class="mb-0">&copy; 2025 Vanshika Namkeen. All Rights Reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="text-dark text-decoration-none">Disclaimer</a>
+            <a href="#" class="text-dark text-decoration-none"
+              >Term Of Service</a
+            >
+            <a href="#" class="text-dark text-decoration-none"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section end -->
+
+    <script src="./js/java.js"></script>
+  </body>
+</html>

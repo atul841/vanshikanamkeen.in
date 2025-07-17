@@ -1,0 +1,522 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.dealership-btn {
+  background-color: #2e00b8;
+  color: white;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.dealership-btn:hover {
+  background-color: #3c12d2;
+}
+
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scrollDesktop 10s linear infinite; /* default desktop */
+}
+
+.carousel-track img {
+  width: 25vw;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 10px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+@keyframes scrollDesktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile Scroll */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation: scrollMobile 40s linear infinite;
+  }
+
+  .carousel-track img {
+    width: 100vw;
+    height: 300px;
+  }
+
+  @keyframes scrollMobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1000vw); /* 10 images * 100vw */
+    }
+  }
+}
+
+
+
+   .slide-bg {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Responsive height for smaller screens */
+    @media (max-width: 768px) {
+      .slide-bg {
+        height: 250px;
+      }
+    }
+
+/* the next part about section start  */
+.hot-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hot-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, yellow, orange);
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-box {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* .product-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+.product-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: linearMoveX 6s linear infinite;
+}
+
+@keyframes linearMoveX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes moveLabel {
+  0% {
+    left: -60px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-box {
+    width: 45%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hot-heading {
+    font-size: 28px;
+  }
+}
+
+
+/* the end oof the section part  */
+
+/* about ka section ka css start ho gaya hai  */
+.about-section {
+  background-color: #f5b400;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.container-about {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.know-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #280083;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.know-more-btn:hover {
+  background-color: #3a00b3;
+}
+
+.logo-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.logo-pulse {
+  width: 300px;
+  animation: pulseLogo 3s ease-in-out infinite;
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 28px;
+  }
+
+  .logo-pulse {
+    width: 200px;
+    margin-top: 20px;
+  }
+}   
+/* css ka section end ho gaya hai  */ 
+
+/* about section ke bad ka css start  */
+.explore-products {
+  background-color: #fff;
+}
+
+.section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: red;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: gold;
+  border-radius: 5px;
+  margin: 8px auto 0;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.product-card {
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-name {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:  cursive;
+  color: white;
+}
+
+/* Background Colors */
+.red-bg {
+  background: radial-gradient(circle, #f44336 30%, #b71c1c 90%);
+}
+
+.blue-bg {
+  background: radial-gradient(circle, #2196f3 30%, #0d47a1 90%);
+}
+
+.yellow-bg {
+  background: radial-gradient(circle, #ffeb3b 30%, #f57f17 90%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+  }
+
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}  
+/* about section ke bad ka section end  */
+
+/* login from ka page ka css start  */
+.dealership-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.chips-image {
+  max-width: 400px;
+} 
+@media screen and (max-width:500px) {
+  
+  .chips-image{ 
+    width: 200px;
+  }
+}
+
+.dealership-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #f26522;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step-indicator {
+  gap: 10px;
+}
+
+.step {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #4a00e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #4a00e0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: #4a00e0;
+  color: #fff;
+}
+
+.next-btn {
+  background: #4a00e0;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #36009c;
+}
+/* loging from page ka css end  */
+
+/* contact page css start */
+.contact-header {
+  background-color: #e1250d; /* bright red */
+}
+
+.breadcrumb-text {
+  font-size: 1.1rem;
+}
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+.contact-header h1 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* contact page css end */
+
+/* conatct information emial phone address css start */
+.section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+}
+
+.underline {
+  width: 100px;
+  margin-top: -10px;
+}
+
+.info-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  color: #555;
+  font-size: 1rem;
+}
+/* conatct page email phone address end  */
+
+/* form ke page ka css start ho gaya hai  */
+.get-in-touch input,
+.get-in-touch textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.get-in-touch button {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* form ke page ka css end ho gya hai yaha pe  */
+
+/* location ke page ka css start ho gaya hai  */
+iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* location ke page ka css end ho gaya hai  */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Auto Scroll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scrollLeft 10s linear infinite;
+    }
+
+    .carousel-track img {
+      width: 25vw; /* 4 visible at a time on desktop */
+      height: 350px; /* Increased height */
+      object-fit: contain; /* Show full image without crop */
+      border-radius: 10px;
+      margin: 10px;
+      flex-shrink: 0;
+      background: #fff; /* Optional: background to avoid transparency issues */
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Mobile: 1 image at a time */
+    @media (max-width: 768px) {
+      .carousel-track img {
+        width: 100vw;
+        height: 300px;
+        animation: scrollLeft 10s linear infinite;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <img src="./image/Image_1.jpeg" alt="1">
+    <img src="./image/image_2.jpeg" alt="2">
+    <img src="./image/image_3.jpeg" alt="3">
+    <img src="./image/image_4.jpeg" alt="4">
+    <img src="./image/image_5.jpeg" alt="5">
+    <img src="./image/image_6.jpeg" alt="6">
+    <img src="./image/image_7.jpeg" alt="7">
+    <img src="./image/image_8.jpeg" alt="8">
+
+    <!-- Duplicates for smooth loop -->
+    <img src="./image/Image_1.jpeg" alt="1">
+    <img src="./image/image_2.jpeg" alt="2">
+    <img src="./image/image_3.jpeg" alt="3">
+    <img src="./image/image_4.jpeg" alt="4">
+  </div>
+</div>
+
+</body>
+</html>
